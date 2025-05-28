@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChainChat Board</title>
+  <link rel="stylesheet" href="chatboard.css" />
+</head>
+<body>
+
+
+
+
+
+
+   <nav class="navbar">
+    <div class="logo">
+      <img src="./assets/IMG-20250526-WA0025-removebg-preview (1).png" alt="ChainChat Logo">
+      <span style="color: rgb(0, 0, 95);">Web3 ChainChat</span>
+    </div>
+    <div class="nav-links">
+      <a href="#" ><img src="./assets/user-circle.svg" alt=""></a>
+      <a href="#"><img src="./assets/settings.svg" alt=""></a>
+      <a href="#"><img src="./assets/log-out.svg" alt=""></a>
+      
+    </div>
+  </nav>
+
+
+
+
+
+
+
+  
+  <div class="main-layout">
+    
+
+    <aside class="sidebar">
+      <nav class="menu">
+        <button class="menu-item active" onclick="switchView('Team')"><img src="./assets/Screenshot__143_-removebg-preview.png" alt="">Chats</button>
+        <button class="menu-item" onclick="switchView('Dir')"><img src="./assets/Screenshot__142_-removebg-preview.png" alt="">Groups</button>
+        <button class="menu-item" onclick="switchView('pub')"><img src="./assets/stacked-scrolling-1.svg" alt="" >    Status</button>
+      </nav>
+    </aside>
+
+
+
+    <main class="content">
+
+
+
+
+      <input type="search" placeholder="search" class="searchbar" >
+
+
+      <div id="Team" class="view active">
+        <div class="chat-header" >
+          <img src="./assets/WhatsApp Image 2025-05-24 at 15.51.04_e58754d2.jpg" alt="Group Avatar" class="chat-avatar">
+          <div class="chat-info">
+            <h3 class="chat-title">Dev Team</h3>
+            <p class="chat-subtext">12 Online</p>
+          </div>
+        </div>
+
+        <div class="chat-header">
+            <img src="./assets/WhatsApp Image 2025-05-24 at 15.51.04_e58754d2.jpg" alt="Group Avatar" class="chat-avatar">
+            <div class="chat-info">
+              <h3 class="chat-title">Xion Board</h3>
+              <p class="chat-subtext">24 online</p>
+            </div>
+        </div>
+
+          <div class="chat-header">
+            <img src="./assets/WhatsApp Image 2025-05-24 at 15.51.04_e58754d2.jpg" alt="Group Avatar" class="chat-avatar">
+            <div class="chat-info">
+              <h3 class="chat-title">Air Farmers</h3>
+              <p class="chat-subtext">Online</p>
+            </div>
+          </div>
+
+      </div>
+    
+      <div id="Dir" class="view">
+        <h2>Groups</h2>
+        <p>You are not part of any group.</p>
+      </div>
+
+      <div id="pub" class="view">
+        <h2>Status</h2>
+        <p>No status updates yet.</p>
+      </div>
+    </main>
+
+
+
+    <aside class="chatcontent" >
+        <div id="chat1">
+            <h3>Team Chats</h3>
+            <div class="chat-item">Alice: Hey team!</div>
+            <div class="chat-item">Bob: Working on the feature</div>
+            <div class="chat-item">You: Almost done with the PR</div>
+        </div>
+
+
+
+
+        
+        <input type="text" placeholder="Type a message" class="messagebox">
+
+    </aside>
+      
+  </div>
+  <script>
+    function switchView(viewId) {
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      document.querySelectorAll('.menu-item').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(viewId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

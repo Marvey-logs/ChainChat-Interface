@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .logo img {
+    width: 70px;
+    height: auto;
+  }
+  
+  
+  .logo span {
+    font-weight: bold;
+  }
+  
+  .login-card {
+    background: rgb(238, 239, 249);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 450px;
+    /* max-width: 420px; */
+    margin: auto;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd92;
+    border-radius: 145px;
+    font-size: 16px;
+  }
+  
+  .btn {
+    display: block; /* Add this */
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center; /* Ensures link text is centered */
+  text-decoration: none; /* Removes underline from <a> */
+  }
+  
+  .btn.blue {
+    background-color: #3366ff;
+    color: white;
+  }
+  
+  .btn.black {
+    background-color: #000;
+    color: white;
+    
+  }
+  
+  .link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3366ff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
